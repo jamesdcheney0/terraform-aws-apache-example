@@ -26,4 +26,6 @@ output "public_ip" {
 ```
 
 # Notes
-To initialize this as a module, cd INTO the `terraform-aws-apache-example` directory THEN init the git repo
+- To initialize this as a module, cd INTO the `terraform-aws-apache-example` directory THEN init the git repo
+
+- Terraform registry requires tags for modules. Provide tags by being in the git directory, and `git tag <major-version>.<minor-version>.<patch>` then `git puss --tags`. To initialize this directory, I ran `git tag 1.0.0 && git push --tags`
